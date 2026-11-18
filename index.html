@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS2 Swing - Portátil</title>
+    <!-- Tipografía Gamer (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PANTALLA DE ENTRADA CON VIDEO DE INTRO -->
+    <div id="splash-screen">
+        <!-- Contenedor inicial con botón START -->
+        <div id="start-container" class="splash-content">
+            <h1 class="glitch-title">PS2 SWING</h1>
+            <p class="subtitle">El poder de la clásica en tus manos</p>
+            <button id="start-btn" class="start-btn">START</button>
+        </div>
+        
+        <!-- Video de la animación de encendido de PS2 -->
+        <video id="intro-video" class="hidden-video" playsinline muted>
+            <source src="img/ps2-intro.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </div>
+
+    <!-- PÁGINA PRINCIPAL PUBLICITARIA -->
+    <main id="main-content" class="hidden">
+        <header class="hero-header">
+            <h1>PS2 SWING</h1>
+            <p>Edición Portátil Exclusiva</p>
+        </header>
+
+        <div class="presentation-container">
+            <!-- Tarjeta de Especificación 1 -->
+            <div class="spec-card">
+                <h3>Pantalla HD</h3>
+                <p>Panel optimizado para una nitidez clásica perfecta.</p>
+            </div>
+
+            <!-- Tarjeta de Especificación 2 -->
+            <div class="spec-card">
+                <h3>Batería con duracion de 5 hrs</h3>
+                <p>Indicador digital trasero y larga autonomía.</p>
+            </div>
+
+            <!-- IMAGEN CENTRAL DE LA CONSOLA -->
+            <div class="console-wrapper">
+                <img src="img/consola.jpg" alt="PS2 Swing Portátil" class="console-img">
+            </div>
+
+            <!-- Tarjeta de Especificación 3 -->
+            <div class="spec-card">
+                <h3>Controles Clásicos</h3>
+                <p>Distribución ergonómica con botones tradicionales.</p>
+            </div>
+
+            <!-- Tarjeta de Especificación 4 -->
+            <div class="spec-card">
+                <h3>Hardware Interno</h3>
+                <p>Memoria de 128gb, sistema de archivos mejores de tus juegos de ps2.</p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE PREVENTA -->
+      <!--  <section class="cta-section">
+            <h2>¿Listo para revivir la leyenda?</h2>
+            <button class="buy-btn" onclick="alert('¡Pronto habilitaremos las reservas oficiales!')">Reservar Consola</button>
+        </section>
+    </main>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
